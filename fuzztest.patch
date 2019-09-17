@@ -50,7 +50,7 @@ index 0000000..2fafaeb
 +
 +# get test collaterals for remote_verify, binary needed
 +sudo cp build/tests/fuzztests/remote_verify /remote_verify
-+sudo cp build/tests/fuzztests/seeds/remote_verify/* /qeidentity_test/seeds
++sudo cp build/tests/fuzztests/seeds/remote_verify/* /remote_verify/seeds
 +
 +# rename seeds for oesign with same extensions (demanded by fuzzer)
 +cd /oesignsign/seeds
