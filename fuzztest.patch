@@ -4,7 +4,7 @@ index 0000000..2fafaeb
 --- /dev/null
 +++ b/fuzz_test.sh
 @@ -0,0 +1,47 @@
-+# !!!! run this from root directory of openenclave !!!!
++!!!! run this from root directory of openenclave !!!!
 +
 +# build OE
 +mkdir build
@@ -12,15 +12,17 @@ index 0000000..2fafaeb
 +cmake .. -DUSE_LIBSGX=OFF
 +sudo make
 +sudo make install
++sudo make install
 +cd ..
 +
 +# build OE samples
 +export CC=gcc
 +. build/output/share/openenclave/openenclaverc
 +find samples  -name Makefile -execdir make \;
++ls
 +
 +# create fuzz test folders
-+sudo mkdir /oesigndump /oesigndump/seeds /oesignsign /oesignsign/seeds /oeedger8r /oeedger8r/seeds /tcbinfo_test /tcbinfo_test/seeds /sgxextensions_test /sgxextensions_test/seeds /qeidentity_test /qeidentity_test/seeds /remote_verify /remote_verify/seeds
++sudo mkdir /oesigndump /oesigndump/seeds /oesignsign /oesignsign/seeds /oeedger8r /oeedger8r/seeds /tcbinfo_test /tcbinfo_test/seeds /sgxextensions_test /sgxextensions_test/seeds /qeidentity_test /qeidentity_test/seeds /remote_verify_test /remote_verify_test/seeds
 +
 +# copy test collaterals for oeedger8r
 +sudo cp build/tools/oeedger8r/oeedger8r /oeedger8r/
@@ -49,8 +51,13 @@ index 0000000..2fafaeb
 +sudo cp build/tests/fuzztests/seeds/qeidentity/* /qeidentity_test/seeds
 +
 +# get test collaterals for remote_verify, binary needed
-+sudo cp build/tests/fuzztests/remote_verify /remote_verify
-+sudo cp build/tests/fuzztests/seeds/remote_verify/* /remote_verify/seeds
++sudo cp build/tests/fuzztests/remoteverify_test /remote_verify_test
++sudo cp build/tests/fuzztests/seeds/remoteverify/* /remote_verify_test/seeds
++
++# rename seeds for oesign with same extensions (demanded by fuzzer)
++cd /oesignsign/seeds
++for f in *;do sudo mv $f $f.unsigned;done
++
 +
 +# rename seeds for oesign with same extensions (demanded by fuzzer)
 +cd /oesignsign/seeds
@@ -99,7 +106,7 @@ index 0000000..014a1ce
 +target_link_libraries(tcbinfo_test PRIVATE oehost oe_includes)
 +target_link_libraries(sgxextensions_test PRIVATE oehostapp )
 +target_link_libraries(qeidentity_test PRIVATE oehost oe_includes)
-+target_link_libraries(remoteverify_test PRIVATE oehost oe_includes)
++target_link_libraries(remoteverify_test PRIVATE oehostapp)
 +
 +add_test(NAME tests/tcbinfo_test COMMAND ./tcbinfo_test ${CMAKE_CURRENT_BINARY_DIR}/seeds/tcbinfoparser/tcbInfo.json)
 +add_test(NAME tests/sgxextensions_test COMMAND ./sgxextensions_test ${CMAKE_CURRENT_BINARY_DIR}/seeds/parcesgxextensions/generate_report.txt)
