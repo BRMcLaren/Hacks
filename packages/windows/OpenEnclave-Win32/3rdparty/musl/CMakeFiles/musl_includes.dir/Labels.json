@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/brmclare/openenclave/tests/fuzztests/3rdparty/musl/CMakeFiles/musl_includes"
+		},
+		{
+			"file" : "C:/Users/brmclare/openenclave/tests/fuzztests/3rdparty/musl/CMakeFiles/musl_includes.rule"
+		},
+		{
+			"file" : "C:/Users/brmclare/openenclave/tests/fuzztests/3rdparty/musl/CMakeFiles/musl_includes-complete.rule"
+		},
+		{
+			"file" : "C:/Users/brmclare/openenclave/tests/fuzztests/3rdparty/musl/musl_includes-prefix/src/musl_includes-stamp/musl_includes-install.rule"
+		},
+		{
+			"file" : "C:/Users/brmclare/openenclave/tests/fuzztests/3rdparty/musl/musl_includes-prefix/src/musl_includes-stamp/musl_includes-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/brmclare/openenclave/tests/fuzztests/3rdparty/musl/musl_includes-prefix/src/musl_includes-stamp/musl_includes-download.rule"
+		},
+		{
+			"file" : "C:/Users/brmclare/openenclave/tests/fuzztests/3rdparty/musl/musl_includes-prefix/src/musl_includes-stamp/musl_includes-update.rule"
+		},
+		{
+			"file" : "C:/Users/brmclare/openenclave/tests/fuzztests/3rdparty/musl/musl_includes-prefix/src/musl_includes-stamp/musl_includes-patch.rule"
+		},
+		{
+			"file" : "C:/Users/brmclare/openenclave/tests/fuzztests/3rdparty/musl/musl_includes-prefix/src/musl_includes-stamp/musl_includes-configure.rule"
+		},
+		{
+			"file" : "C:/Users/brmclare/openenclave/tests/fuzztests/3rdparty/musl/musl_includes-prefix/src/musl_includes-stamp/musl_includes-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"musl_includes"
+		],
+		"name" : "musl_includes"
+	}
+}

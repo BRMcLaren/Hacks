@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/brmclare/openenclave/tests/fuzztests/3rdparty/libcxx/CMakeFiles/libcxx_includes"
+		},
+		{
+			"file" : "C:/Users/brmclare/openenclave/tests/fuzztests/3rdparty/libcxx/CMakeFiles/libcxx_includes.rule"
+		},
+		{
+			"file" : "C:/Users/brmclare/openenclave/tests/fuzztests/3rdparty/libcxx/CMakeFiles/libcxx_includes-complete.rule"
+		},
+		{
+			"file" : "C:/Users/brmclare/openenclave/tests/fuzztests/3rdparty/libcxx/libcxx_includes-prefix/src/libcxx_includes-stamp/libcxx_includes-install.rule"
+		},
+		{
+			"file" : "C:/Users/brmclare/openenclave/tests/fuzztests/3rdparty/libcxx/libcxx_includes-prefix/src/libcxx_includes-stamp/libcxx_includes-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/brmclare/openenclave/tests/fuzztests/3rdparty/libcxx/libcxx_includes-prefix/src/libcxx_includes-stamp/libcxx_includes-download.rule"
+		},
+		{
+			"file" : "C:/Users/brmclare/openenclave/tests/fuzztests/3rdparty/libcxx/libcxx_includes-prefix/src/libcxx_includes-stamp/libcxx_includes-update.rule"
+		},
+		{
+			"file" : "C:/Users/brmclare/openenclave/tests/fuzztests/3rdparty/libcxx/libcxx_includes-prefix/src/libcxx_includes-stamp/libcxx_includes-patch.rule"
+		},
+		{
+			"file" : "C:/Users/brmclare/openenclave/tests/fuzztests/3rdparty/libcxx/libcxx_includes-prefix/src/libcxx_includes-stamp/libcxx_includes-configure.rule"
+		},
+		{
+			"file" : "C:/Users/brmclare/openenclave/tests/fuzztests/3rdparty/libcxx/libcxx_includes-prefix/src/libcxx_includes-stamp/libcxx_includes-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"libcxx_includes"
+		],
+		"name" : "libcxx_includes"
+	}
+}

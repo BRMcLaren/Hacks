@@ -1,0 +1,36 @@
+# CMake generated Testfile for 
+# Source directory: C:/Users/brmclare/openenclave/tests/oeedger8r/behavior
+# Build directory: C:/Users/brmclare/openenclave/tests/fuzztests/tests/oeedger8r/behavior
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+add_test(edger8r_private_trusted_warning "C:/Users/brmclare/openenclave/tests/fuzztests/tools/oeedger8r/oeedger8r.exe" "--header-only" "--search-path" "C:/Users/brmclare/openenclave/tests/oeedger8r/behavior" "private_trusted.edl")
+set_tests_properties(edger8r_private_trusted_warning PROPERTIES  PASS_REGULAR_EXPRESSION "error: Function 'private': 'private' specifier is not supported by oeedger8r")
+add_test(edger8r_allow_list_warning "C:/Users/brmclare/openenclave/tests/fuzztests/tools/oeedger8r/oeedger8r.exe" "--header-only" "--search-path" "C:/Users/brmclare/openenclave/tests/oeedger8r/behavior" "allow_list.edl")
+set_tests_properties(edger8r_allow_list_warning PROPERTIES  PASS_REGULAR_EXPRESSION "Warning: Function 'ocall_allow': Reentrant ocalls are not supported by Open Enclave. Allow list ignored.")
+add_test(edger8r_switchless_trusted_warning "C:/Users/brmclare/openenclave/tests/fuzztests/tools/oeedger8r/oeedger8r.exe" "--header-only" "--search-path" "C:/Users/brmclare/openenclave/tests/oeedger8r/behavior" "switchless_trusted.edl")
+set_tests_properties(edger8r_switchless_trusted_warning PROPERTIES  PASS_REGULAR_EXPRESSION "error: Function 'foo': switchless ecalls are not yet supported by Open Enclave SDK.")
+add_test(edger8r_portability_trusted_wchar_t_warning "C:/Users/brmclare/openenclave/tests/fuzztests/tools/oeedger8r/oeedger8r.exe" "--header-only" "--search-path" "C:/Users/brmclare/openenclave/tests/oeedger8r/behavior" "portability.edl")
+set_tests_properties(edger8r_portability_trusted_wchar_t_warning PROPERTIES  PASS_REGULAR_EXPRESSION "Function 'ocall': wchar_t has different sizes")
+add_test(edger8r_portability_trusted_long_double_warning "C:/Users/brmclare/openenclave/tests/fuzztests/tools/oeedger8r/oeedger8r.exe" "--header-only" "--search-path" "C:/Users/brmclare/openenclave/tests/oeedger8r/behavior" "portability.edl")
+set_tests_properties(edger8r_portability_trusted_long_double_warning PROPERTIES  PASS_REGULAR_EXPRESSION "Function 'ocall': long double has different sizes")
+add_test(edger8r_portability_trusted_long_warning "C:/Users/brmclare/openenclave/tests/fuzztests/tools/oeedger8r/oeedger8r.exe" "--header-only" "--search-path" "C:/Users/brmclare/openenclave/tests/oeedger8r/behavior" "portability.edl")
+set_tests_properties(edger8r_portability_trusted_long_warning PROPERTIES  PASS_REGULAR_EXPRESSION "Function 'ocall': long has different sizes")
+add_test(edger8r_portability_trusted_unsigned_long_warning "C:/Users/brmclare/openenclave/tests/fuzztests/tools/oeedger8r/oeedger8r.exe" "--header-only" "--search-path" "C:/Users/brmclare/openenclave/tests/oeedger8r/behavior" "portability.edl")
+set_tests_properties(edger8r_portability_trusted_unsigned_long_warning PROPERTIES  PASS_REGULAR_EXPRESSION "Function 'ocall': unsigned long has different sizes")
+add_test(edger8r_portability_untrusted_wchar_t_warning "C:/Users/brmclare/openenclave/tests/fuzztests/tools/oeedger8r/oeedger8r.exe" "--header-only" "--search-path" "C:/Users/brmclare/openenclave/tests/oeedger8r/behavior" "portability.edl")
+set_tests_properties(edger8r_portability_untrusted_wchar_t_warning PROPERTIES  PASS_REGULAR_EXPRESSION "Function 'ecall': wchar_t has different sizes")
+add_test(edger8r_portability_untrusted_long_double_warning "C:/Users/brmclare/openenclave/tests/fuzztests/tools/oeedger8r/oeedger8r.exe" "--header-only" "--search-path" "C:/Users/brmclare/openenclave/tests/oeedger8r/behavior" "portability.edl")
+set_tests_properties(edger8r_portability_untrusted_long_double_warning PROPERTIES  PASS_REGULAR_EXPRESSION "Function 'ecall': long double has different sizes")
+add_test(edger8r_portability_untrusted_long_warning "C:/Users/brmclare/openenclave/tests/fuzztests/tools/oeedger8r/oeedger8r.exe" "--header-only" "--search-path" "C:/Users/brmclare/openenclave/tests/oeedger8r/behavior" "portability.edl")
+set_tests_properties(edger8r_portability_untrusted_long_warning PROPERTIES  PASS_REGULAR_EXPRESSION "Function 'ecall': long has different sizes")
+add_test(edger8r_portability_untrusted_unsigned_long_warning "C:/Users/brmclare/openenclave/tests/fuzztests/tools/oeedger8r/oeedger8r.exe" "--header-only" "--search-path" "C:/Users/brmclare/openenclave/tests/oeedger8r/behavior" "portability.edl")
+set_tests_properties(edger8r_portability_untrusted_unsigned_long_warning PROPERTIES  PASS_REGULAR_EXPRESSION "Function 'ecall': unsigned long has different sizes")
+add_test(edger8r_size_signedness_warning "C:/Users/brmclare/openenclave/tests/fuzztests/tools/oeedger8r/oeedger8r.exe" "--header-only" "--search-path" "C:/Users/brmclare/openenclave/tests/oeedger8r/behavior" "size_signedness.edl")
+set_tests_properties(edger8r_size_signedness_warning PROPERTIES  FAIL_REGULAR_EXPRESSION "Warning: Function 'unsigned_size': Size or count parameter 'size' should not be signed." PASS_REGULAR_EXPRESSION "Warning: Function 'signed_size': Size or count parameter 'size' should not be signed.")
+add_test(edger8r_count_signedness_warning "C:/Users/brmclare/openenclave/tests/fuzztests/tools/oeedger8r/oeedger8r.exe" "--header-only" "--search-path" "C:/Users/brmclare/openenclave/tests/oeedger8r/behavior" "count_signedness.edl")
+set_tests_properties(edger8r_count_signedness_warning PROPERTIES  FAIL_REGULAR_EXPRESSION "Warning: Function 'unsigned_count': Size or count parameter 'count' should not be signed." PASS_REGULAR_EXPRESSION "Warning: Function 'signed_count': Size or count parameter 'count' should not be signed.")
+add_test(edger8r_size_and_count_warning "C:/Users/brmclare/openenclave/tests/fuzztests/tools/oeedger8r/oeedger8r.exe" "--header-only" "--search-path" "C:/Users/brmclare/openenclave/tests/oeedger8r/behavior" "size_and_count.edl")
+set_tests_properties(edger8r_size_and_count_warning PROPERTIES  PASS_REGULAR_EXPRESSION "Function 'size_and_count': simultaneous 'size' and 'count' parameters 'size' and 'count' are not supported by oeedger8r.")
+add_test(edger8r_deepcopy_value_warning "C:/Users/brmclare/openenclave/tests/fuzztests/tools/oeedger8r/oeedger8r.exe" "--header-only" "--search-path" "C:/Users/brmclare/openenclave/tests/oeedger8r/behavior" "deepcopy_value.edl")
+set_tests_properties(edger8r_deepcopy_value_warning PROPERTIES  PASS_REGULAR_EXPRESSION "error: the structure declaration \"MyStruct\" specifies a deep copy is expected. Referenced by value in function \"deepcopy_value\" detected.")

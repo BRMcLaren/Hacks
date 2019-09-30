@@ -1,0 +1,13 @@
+# Target labels
+ musl_includes
+# Source files and their labels
+C:/Users/brmclare/openenclave/tests/fuzztests/3rdparty/musl/CMakeFiles/musl_includes
+C:/Users/brmclare/openenclave/tests/fuzztests/3rdparty/musl/CMakeFiles/musl_includes.rule
+C:/Users/brmclare/openenclave/tests/fuzztests/3rdparty/musl/CMakeFiles/musl_includes-complete.rule
+C:/Users/brmclare/openenclave/tests/fuzztests/3rdparty/musl/musl_includes-prefix/src/musl_includes-stamp/musl_includes-install.rule
+C:/Users/brmclare/openenclave/tests/fuzztests/3rdparty/musl/musl_includes-prefix/src/musl_includes-stamp/musl_includes-mkdir.rule
+C:/Users/brmclare/openenclave/tests/fuzztests/3rdparty/musl/musl_includes-prefix/src/musl_includes-stamp/musl_includes-download.rule
+C:/Users/brmclare/openenclave/tests/fuzztests/3rdparty/musl/musl_includes-prefix/src/musl_includes-stamp/musl_includes-update.rule
+C:/Users/brmclare/openenclave/tests/fuzztests/3rdparty/musl/musl_includes-prefix/src/musl_includes-stamp/musl_includes-patch.rule
+C:/Users/brmclare/openenclave/tests/fuzztests/3rdparty/musl/musl_includes-prefix/src/musl_includes-stamp/musl_includes-configure.rule
+C:/Users/brmclare/openenclave/tests/fuzztests/3rdparty/musl/musl_includes-prefix/src/musl_includes-stamp/musl_includes-build.rule
